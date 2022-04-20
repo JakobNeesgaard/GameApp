@@ -5,6 +5,6 @@ console.log('start2!');
 //alert('fsdf2');
 document.addEventListener('DOMContentLoaded', run, false);
 function run() {
-    alert('test38');
+    alert('test39');
 }
 //# sourceMappingURL=gameapp.js.map
