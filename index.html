@@ -6,7 +6,7 @@
   <meta name="theme-color" content="white"/>
   <meta charset="utf-8">
 
-  <title>Hello World</title>
+  <title>JNGames</title>
 
   <link rel="stylesheet" href="css/style.css">
 
@@ -17,7 +17,7 @@
   
   <meta name="apple-mobile-web-app-capable" content="yes">  
   <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
-  <meta name="apple-mobile-web-app-title" content="Hello World"> 
+  <meta name="apple-mobile-web-app-title" content="JNGames"> 
   <meta name="msapplication-TileImage" content="images/hello-icon-144.png">  
   <meta name="msapplication-TileColor" content="#FFFFFF">
 
@@ -27,9 +27,53 @@
 
   <body class="fullscreen">
     <div class="container">
-      <h1 class="title" id="mainTitle">Hello WorldX9!</h1>
-    </div>
+      
+      <h2 class="title" id="mainTitle">Gæt en hovedstad!</h2>
+      <br>
+      <br>
+      <button type="button" id="newGameButton">Nyt spil</button> 
 
+      <br>
+      <br>
+
+      <table id="gameTable" style="height: 100px; border: 1px solid black;width: 100%; font-size: xxx-large;">
+        <tr id="gameTableRow">
+
+        </tr>
+
+      </table>
+
+      <div  style="width: 100%;">
+        <label id="guessesLeftLabel" ></label>
+      </div>
+
+      <br>
+      <br>
+
+      <div>
+        <div>
+          <label for="name">Bogstav:</label>
+          <input type="text" pattern="[A-Za-z]{1}" maxlength="1" title="Bogstav" id="singleLetterInput" readonly="true" />
+          <button type="button" id="guessLetterButton"  disabled="true" >--></button> 
+        </div>
+      
+        <div>
+          <br>
+        </div>
+
+        <div>
+      
+          <label for="name">Løsning:</label>
+          <input type="text" title="Løsning" id="solutionInput" readonly="true" />
+          <button type="button" id="guessSolutionButton" disabled="true">--></button> 
+        </div>
+
+      </div>
+
+    
+      <div  style="width: 100%;">
+        <label id="solutionInformationLabel" ></label>
+      </div>
     
 
     <script src="js/main.js"></script>

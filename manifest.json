@@ -1,6 +1,6 @@
 {
-    "name": "Hello World",
-    "short_name": "Hello",
+    "name": "JNGames",
+    "short_name": "JNGames",
 
     "icons": [{
         "src": "images/hello-icon-128.png",
