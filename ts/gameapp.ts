@@ -1,5 +1,5 @@
 
-//import { createClient } from '@supabase/supabase-js'
+//import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js'
 
 // Create a single supabase client for interacting with your database 
 //const supabase = createClient('https://xyzcompany.supabase.co', 'public-anon-key')
@@ -8,6 +8,17 @@
 
 console.log('start2!');
 //alert('fsdf2');
+
+
+ async function testSupabase(supabase){
+
+  const { data, error } = await supabase
+  .from('activeGame')
+  .select();
+
+  console.log('data, error: ', data,error);
+
+}
 
 document.addEventListener('DOMContentLoaded', run, false);
 
