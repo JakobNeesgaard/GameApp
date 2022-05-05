@@ -30,8 +30,19 @@
       
       <h2 class="title" id="mainTitle">Gæt en hovedstad!</h2>
       <br>
-      <br>
-      <button type="button" id="newGameButton">Nyt spil</button> 
+      <div>
+        <div>
+          <button type="button" id="newGameButton">Nyt spil</button> 
+
+          <button type="button" id="joinGameButton">Join</button> 
+
+        </div>
+      
+        <div>
+          <label id="playerActiveLabel" ></label>
+        </div>
+
+      <div>
 
       <br>
       <br>
@@ -92,7 +103,7 @@
 
   //console.log('data, error: ', data,error);
 
-      testSupabase(supabase);
+      setupSupabase(supabase);
 
       // ...
     </script>
